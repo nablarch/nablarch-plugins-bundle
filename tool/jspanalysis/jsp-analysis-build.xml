@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JSP解析" basedir="." default="JSP解析(HTMLレポート出力)">
+
+    <!-- プロパティファイル名 -->
+    <property file="jsp-analysis-build.properties" />
+
+    <path id="jspcheck.libs" description="依存ライブラリ">
+        <fileset dir="${project.test.lib}" description="チェックツールlib設定">
+            <include name="*.jar" />
+        </fileset>
+    </path>
+
+    <target name="JSP解析(HTMLレポート出力)" depends="JSP解析(XMLレポート出力)" description="JSPの解析を行い、HTMLレポートを出力する。">
+    	<java classname="nablarch.test.tool.sanitizingcheck.HtmlConvert" dir="${basedir}" fork="true">
+            <jvmarg value="-Dfile.encoding=${charset}" />
+            <arg value="${xmloutput}" />
+            <arg value="${xsl}" />
+            <arg value="${htmloutput}" />
+            <classpath refid="jspcheck.libs" />
+        </java>
+    </target>
+
+    <target name="JSP解析(XMLレポート出力)" description="JSPの解析を行い、HTMLレポートを出力する。">
+        <java classname="nablarch.test.tool.sanitizingcheck.SanitizingCheckTask" dir="${basedir}" fork="true">
+            <jvmarg value="-Dfile.encoding=${charset}" />
+            <arg value="${checkjspdir}" />
+            <arg value="${xmloutput}" />
+            <arg value="${checkconfig}" />
+            <arg value="${charset}" />
+            <arg value="${lineseparator}" />
+            <arg value="${additionalexts}" />
+            <arg value="${excludePatterns}" />
+            <classpath refid="jspcheck.libs" />
+        </java>
+    </target>
+</project>

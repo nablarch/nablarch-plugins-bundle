@@ -1,0 +1,10 @@
+{
+  "name": "Nablarch JavaScript Widget",
+  "description": "Nablarch JavaScript部品 API ドキュメント",
+  "version": "1.0.0",
+  "options": {
+    "paths": "**/js",
+    "outdir": "../doc/_static/yuidoc",
+    "exclude": "jquery.js,jquery.cluetip.js,require.js,devtool.js,devtool"
+  }
+}

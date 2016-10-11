@@ -1,0 +1,16 @@
+{ "name"   : "nablarch_ui_plugin_bundle"
+, "version": "1.0.1"
+, "private": true
+, "dependencies":
+  { "requirejs"  : "2.1.11"
+  , "sugar"      : "1.4.1"
+  , "jquery"     : "1.11.0"
+  , "font-awesome": "4.0.3"
+  }
+, "devDependencies":
+  { "less"   : "1.4.2"
+  , "shelljs": "0.2.6"
+  , "es6-promise": "0.1.1"
+  }
+, "scripts": {}
+}
