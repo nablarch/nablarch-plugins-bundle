@@ -1,2 +1,12 @@
 **/.idea/
 **/*.iml
+
+jquery
+sugar
+requirejs
+font-awesome
+less
+shelljs
+es6-promise
+
+**/tools/lib/*.jar
