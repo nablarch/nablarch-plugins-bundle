@@ -1,5 +1,5 @@
 { "name"   : "nablarch_ui_plugin_bundle"
-, "version": "1.0.1"
+, "version": "1.0.2"
 , "private": true
 , "dependencies":
   { "requirejs"  : "2.1.11"
