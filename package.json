@@ -9,7 +9,7 @@
   }
 , "devDependencies":
   { "less"   : "1.4.2"
-  , "shelljs": "0.2.6"
+  , "shelljs": "0.8.5"
   }
 , "scripts": {}
 }
