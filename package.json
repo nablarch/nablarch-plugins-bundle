@@ -2,7 +2,7 @@
 , "version": "1.0.6"
 , "private": true
 , "dependencies":
-  { "requirejs"  : "2.1.11"
+  { "requirejs"  : "2.3.7"
   , "sugar"      : "1.4.1"
   , "jquery"     : "3.5.1"
   , "font-awesome": "4.0.3"
